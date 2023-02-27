@@ -11,12 +11,15 @@ enum FlightState {
     IDLE2   // post-flight idle
 };
 
+enum FlightState state;
+
 void setup() {
-  // put your setup code here, to run once:
+    // put your setup code here, to run once:
+    state = IDLE1;
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+    // put your main code here, to run repeatedly:
     enum FlightState state = IDLE1;
 
     switch (state) {
