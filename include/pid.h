@@ -16,7 +16,12 @@ class PID{
 
 public:
 
+    // Update errors and the  resulting command
     void update(float value, float dt);
+
+    // Return command
     float getCommand();
+
+    // Create a PID controller with the given setpoint and gains
     PID(float setpoint, float p, float i, float d, float s);
 };
