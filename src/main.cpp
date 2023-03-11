@@ -1,4 +1,8 @@
 #include <Arduino.h>
+#include <ClickButton.h>
+#include <Orientation.h>
+
+#include "pid.h"
 
 enum FlightState {
     IDLE1,  // pre-launch idle

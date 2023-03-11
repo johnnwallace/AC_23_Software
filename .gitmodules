@@ -1,0 +1,6 @@
+[submodule "lib/ClickButton"]
+	path = lib/ClickButton
+	url = https://github.com/marcobrianza/ClickButton
+[submodule "lib/Orientation"]
+	path = lib/Orientation
+	url = https://github.com/peregrine-developments/Orientation
