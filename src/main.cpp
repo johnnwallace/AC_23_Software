@@ -1,19 +1,5 @@
 #include <Arduino.h>
-#include <ClickButton.h>
-#include <Orientation.h>
-
-#include "pid.h"
-
-enum FlightState {
-    IDLE1,  // pre-launch idle
-    CALIB,  // calibration
-    COUNT,  // countdown
-    POWER,  // powered flight
-    UNPWR,  // unpowered flight
-    DESC,   // descent
-    LAND,   // landed
-    IDLE2   // post-flight idle
-};
+#include "states.h"
 
 enum FlightState state;
 

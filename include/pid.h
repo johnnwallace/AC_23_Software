@@ -4,15 +4,13 @@ class PID{
     float gains[4];
     float limit[2];
     float setpoint;
+    float command;
 
     float error;
     float lastError;
     float cumulativeError;
     float derivativeError;
     float saturationError;
-
-    float setpoint;
-    float command;
 
 public:
 
