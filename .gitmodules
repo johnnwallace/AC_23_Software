@@ -4,3 +4,12 @@
 [submodule "lib/Orientation"]
 	path = lib/Orientation
 	url = https://github.com/peregrine-developments/Orientation
+[submodule "lib/Adafruit_BNO055"]
+	path = lib/Adafruit_BNO055
+	url = https://github.com/adafruit/Adafruit_BNO055
+[submodule "lib/Adafruit_Sensor"]
+	path = lib/Adafruit_Sensor
+	url = https://github.com/adafruit/Adafruit_Sensor
+[submodule "lib/Adafruit_BMP3XX"]
+	path = lib/Adafruit_BMP3XX
+	url = https://github.com/adafruit/Adafruit_BMP3XX

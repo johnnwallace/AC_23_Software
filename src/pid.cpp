@@ -9,7 +9,7 @@ void PID::update(float value, float dt) {
 
     float unclamped = this->gains[0] * this->error
                     + this->gains[1] * this->cumulativeError
-                    + this->gains[2] * this->derivativeError;
+                    + this->gains[2] * this->derivativeError
                     + this->gains[3] * this->saturationError;
 
     this->command = clamp(unclamped, this->limit[0], this->limit[1]);

@@ -5,15 +5,15 @@ enum FlightState state;
 
 void setup() {
     // put your setup code here, to run once:
-    state = IDLE1;
+    state = PRELAUNCH;
 }
 
 void loop() {
     // put your main code here, to run repeatedly:
-    enum FlightState state = IDLE1;
+    enum FlightState state = PRELAUNCH;
 
     switch (state) {
-        case IDLE1:
+        case PRELAUNCH:
             break;
         case CALIB:
             break;
@@ -27,7 +27,7 @@ void loop() {
             break;
         case LAND:
             break;
-        case IDLE2:
+        case POSTFLIGHT:
             break;
     }
 
