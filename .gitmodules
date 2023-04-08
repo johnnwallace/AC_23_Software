@@ -13,3 +13,6 @@
 [submodule "lib/Adafruit_BMP3XX"]
 	path = lib/Adafruit_BMP3XX
 	url = https://github.com/adafruit/Adafruit_BMP3XX
+[submodule "lib/Adafruit_BusIO"]
+	path = lib/Adafruit_BusIO
+	url = https://github.com/adafruit/Adafruit_BusIO
