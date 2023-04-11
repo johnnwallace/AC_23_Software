@@ -2,6 +2,8 @@
 #include <Adafruit_BMP3XX.h>
 #include <Orientation.h>
 
+enum ReturnType {SUCCESS = 1, FAILURE = 0}; 
+
 struct rawData{
     // system time
     unsigned int micros;
@@ -16,17 +18,20 @@ class Telem{
     Adafruit_BMP3XX *baro;
 
     unsigned int thisMicros, lastMicros;
-    Orientation *orientation;
+    Orientation orientation;
     float velocity, acceleration;
 
     rawData thisData, lastData;
 
 public:
+    // Constructor takes sensor objects
+    Telem(Adafruit_BNO055 *imu, Adafruit_BMP3XX *baro);
+
     // Calibrate initial orientation and altitude
     void calibrate(); 
 
     // Initialize IMU and barometer
-    void init();
+    ReturnType init();
 
     // Collect sensor data
     void sensorEvent();
@@ -39,4 +44,4 @@ public:
 
     // Return the rocket's current vertical acceleration
     float getAcceleration();
-}
+};
