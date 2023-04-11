@@ -1,9 +1,6 @@
 [submodule "lib/ClickButton"]
 	path = lib/ClickButton
 	url = https://github.com/marcobrianza/ClickButton
-[submodule "lib/Orientation"]
-	path = lib/Orientation
-	url = https://github.com/peregrine-developments/Orientation
 [submodule "lib/Adafruit_BNO055"]
 	path = lib/Adafruit_BNO055
 	url = https://github.com/adafruit/Adafruit_BNO055
@@ -16,3 +13,6 @@
 [submodule "lib/Adafruit_BusIO"]
 	path = lib/Adafruit_BusIO
 	url = https://github.com/adafruit/Adafruit_BusIO
+[submodule "lib/Orientation"]
+	path = lib/Orientation
+	url = https://github.com/johnnwallace/Orientation
